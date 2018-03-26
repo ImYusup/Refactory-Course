@@ -1,0 +1,3 @@
+{"nama":" arsyad","_id":"U4dnv9OUkmhYIUzG"}
+{"nama":"yusup","_id":"egwiSKDLVyFtLoKX"}
+{"nama":" putri","_id":"mL2BAnJkiyJQAqd9"}
