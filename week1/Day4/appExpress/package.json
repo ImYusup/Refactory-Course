@@ -1,0 +1,15 @@
+{
+  "name": "belajarnode",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "devDependencies": {},
+  "description": "- npm init to \"enter to many times\" automatically will show the package json inside (e.g : package-lock.json, package.json). - copas source code here : http://expressjs.com/en/starter/hello-world.html ```javascript const express = require('express') const app = express()"
+}
