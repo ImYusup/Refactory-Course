@@ -1,0 +1,65 @@
+,An analyst is trying to devise a regression model to predict the P/E ratio of the S$P index
+,The model might include a number of quantitative independent variables such as interest
+,rates and qualitative variable such as the "investor psychology" 
+
+,The analyst could represent the investor psychology by 0 (low) or 1 (high) 
+
+
+P/E,10yr treasury,investor ,Residuals,,,SUMMARY OUTPUT,, (without the investor psychology)
+23,5.915348895325225,0,-0.03372702624280777
+22.6,5.7845396859774105,1,0.45548128374139196,,,Regression Statistics
+24.1,5.990544433177815,1,0.5551125022152767,,,Multiple R,0.8429294886184543
+23.2,5.839350954756073,1,0.6828879784094184,,,R Square,0.7105301227825689
+22.9,5.8915044547643465,1,0.02836152088142896,,,Adjusted R Square,0.6912321309680735
+21.2,5.644693953770743,1,0.00611761748260875,,,Standard Error,0.4253946262846055
+22.7,5.898202872416034,0,-0.21717264807595527,,,Observations,17
+21.728794762045975,5.805004510379133,0,-0.5548387154064933
+22.201335623426502,5.7707013981309085,1,0.150886129131802,,,ANOVA
+22.772242141681375,5.807585688819314,1,0.4710624583462746,,,,df,SS,MS,F,Significance F
+22.692841877012047,5.929052561947435,0,-0.4340392497598877,,,Regression,1,6.6627631567806995,6.6627631567806995,36.818863310371206,0.00002152718692216863
+21.378029146383806,5.705268488891553,1,-0.2276237855574763,,,Residual,15,2.7144088210772876,0.18096058807181917
+22.785875010531605,5.891374724048844,0,-0.08488159160857478,,,Total,16,9.377171977857987
+21.69186154230633,5.830189646962749,0,-0.7629741987321204
+22.077621127794252,5.841917833023091,0,-0.4569398906760611,,,,Coefficients,Standard Error,t Stat,P-value,Lower 95%,Upper 95%
+22.812248362824782,5.845722888114104,1,0.25182153090183945,,,Intercept,-17.177336249837726,6.527568985422119,-2.63150589265307,0.018875723938514975,-31.09052013290845,-3.2641523667670036
+21.402127568782532,5.65025154282776,1,0.17046608494944238,,,10yr treasury,6.7977500545840135,1.120288824639786,6.067854918368698,0.00002152718692216863,4.409910959482583,9.185589149685443
+
+,All positive residuals are associated with
+,are associated with high investor psychology
+,suggesting that investor psychology might 
+,be predictive factor 
+,,,,,,SUMMARY OUTPUT
+
+,,,,,,Regression Statistics
+,,,,,,Multiple R,0.9569327556448021
+,,,,,,R Square,0.9157202988259544
+,,,,,,Adjusted R Square,0.9036803415153765
+,,,,,,Standard Error,0.237592876900127
+,,,,,,Observations,17
+
+,,,,,,ANOVA
+,,,,,,,df,SS,MS,F,Significance F
+,,,,,,Regression,2,8.586866725706482,4.293433362853241,76.05677289415561,3.0203752969755e-8
+,,,,,,Residual,14,0.7903052521515046,0.0564503751536789
+,,,,,,Total,16,9.377171977857987
+
+,,,,,,,Coefficients,Standard Error,t Stat,P-value,Lower 95%,Upper 95%
+,,,,,,Intercept,-27.686298856885767,4.065951056846648,-6.80930450706357,0.000008469505356049169,-36.406896530355276,-18.965701183416257
+,,,,,,10yr treasury,8.52521977443768,0.6921420470009605,12.317153410022277,6.68703771320229e-9,7.040722730474701,10.009716818400658
+,,,,,,investor ,0.7561596097165059,0.12951875749104094,5.838224704779235,0.000043063069603024534,0.478369503673517,1.0339497157594948
+
+,In general, a qualitative variable that can take q different distinct values can be represented by q-1 dummy variables.
+,In the example, the qualitative variable could take two distinct values (high or low) thus we were able 
+,to incorporate this information with only one dummy variable (investor).
+
+,Suppose in another example we are trying to see if there is a seasonal pattern to the dependent variable. To represent the 
+,impact of the four quarters we would use three dummy variable:
+,    ,D1,1 if the quarter is I, 0 otherwise
+,,D2,1 if the quarter is II, 0 otherwise
+,,D3,1 if the quarter is III, 0 otherwise. 
+,,,Notice that if all of D1, D2 and D3 are all zero, the quarter must be IV, thus no need to introduce
+,,,a new variable for quarter IV. 
+
+,,In this coding schema of the quarters quarter IV is called the base
+,,Designation of any one of the qualitative values as base is completely arbitrary, we could have just as 
+,,easily designated quarter I, II, or III as the base. 
