@@ -4,7 +4,7 @@ This is exercises (see file : app.js) for using caporal with logic combination.
 
 [Exercises 3] : https://gist.github.com/mul14/dd1da075b95fa7332d568ecf57babe0e
 
-1. **String Transformation.**
+**1. String Transformation.**
 
 make some function and combination with coporal :
 
@@ -20,7 +20,7 @@ Output example :
 # Output "I Am Crazy Text"
 ```
 
-2. **Arithmetic.**
+**2. Arithmetic.**
 
 make some function and combination with coporal :
 
@@ -39,7 +39,7 @@ Output example :
 # Output 10
 ```
 
-3. **Palindrome.**
+**3. Palindrome.**
 
 make some function and combination with coporal :
 
@@ -56,7 +56,7 @@ Is palindrome? No
 String: "Ibu Ratna antar ubi"
 Is palindrome? Yes
 ```
-4. **Obfuscator.**
+**4. Obfuscator.**
 
 make some function and combination with coporal :
 
@@ -68,7 +68,7 @@ Input :
 Output : 
 &#101;&#109;&#97;&#105;&#108;&#64;&#101;&#120;&#97;&#109;&#112;&#108;&#101;&#46;&#99;&#111;&#109;
 ```
-5. **Random String.**
+**5. Random String.**
 
 make some function and combination with coporal :
 
@@ -94,7 +94,7 @@ Output :
 # Output ljmuoyopwxcvhycowqqi
 ```
 
-6. **Get IP Address in private network.**
+**6. Get IP Address in private network.**
 
 make some function and combination with coporal :
 
@@ -117,7 +117,7 @@ Output :
 180.253.116.29
 ```
 
-8. **Get headlines from https://www.kompas.com/**
+**8. Get headlines from https://www.kompas.com/**
 
 make some function and combination with coporal :
 
@@ -141,7 +141,7 @@ URL: https://megapolitan.kompas.com/read/2018/04/02/19182321/fraksi-gerindra-nil
 TITLE: Xpander Sukses Borong Penghargaan di Tahun Pertamanya
 URL: https://pubads.g.doubleclick.net/gampad/jump?iu=/31800665/KOMPAS.COM/home&sz=740x500&t=Pos=HL4&c=20180207111
 ```
-9. **Import/Export CSV/XLS/XLSX file.**
+**9. Import/Export CSV/XLS/XLSX file.**
 
 make some function and combination with coporal :
 
@@ -154,7 +154,7 @@ Output :
 see file : report2018.csv
 ```
 
-10. **Get a screenshot from a URL.**
+**10. Get a screenshot from a URL.**
 
 - Instll package NPM 'puppeteer'
 make some function and combination with coporal :
@@ -168,7 +168,7 @@ Output :
 see file : google.png
 ```
 
-11. **Get screenshots from a list of file.**
+**11. Get screenshots from a list of file.**
 
 make some function and combination with coporal :
 
@@ -185,7 +185,7 @@ Output :
 see the folder : simpan
 ```
 
-12. **Get all information about new movies in theaters for today from https://www.cgv.id.**
+**12. Get all information about new movies in theaters for today from https://www.cgv.id.**
 
 make some function and combination with coporal :
 
