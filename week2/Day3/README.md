@@ -1,6 +1,6 @@
 ### Here's basic use SQL
 
-This is exersises for basic how use to SQL
+This is Exercises 2 for basic how use to SQL
 ```link
 https://gist.github.com/mul14/c800fe7ce0e5b80686ec66775bb8523f#file-01-online_store-sql
 ```

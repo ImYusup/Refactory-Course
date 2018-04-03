@@ -1,5 +1,5 @@
 ## **Here's step how to show the results mysql in terminal**
-
+### **[Exercises 1 : Basis SQL]** ###
 ### **1. Make sure you have .db and import, create, & select .db in your SQL.**
 
 Import's and follow this step :
