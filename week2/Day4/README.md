@@ -54,7 +54,7 @@ Is palindrome? No
 String: "Ibu Ratna antar ubi"
 Is palindrome? Yes
 ```
-4 Obfuscator
+4. Obfuscator
 
 make some function and combination with coporal :
 
@@ -154,6 +154,7 @@ see file : report2018.csv
 
 10. Get a screenshot from a URL
 
+- Instll package NPM 'puppeteer'
 make some function and combination with coporal :
 
 Input & Output example :
