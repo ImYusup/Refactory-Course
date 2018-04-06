@@ -1,0 +1,22 @@
+{
+  "name": "exercisesClass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "express": "^4.16.3",
+    "md5": "^2.2.1",
+    "one-encryption": "^2.7.1",
+    "sha1": "^1.1.1",
+    "sha256": "^0.2.0",
+    "sha512": "0.0.1",
+    "simple-encryptor": "^1.2.0"
+  }
+}

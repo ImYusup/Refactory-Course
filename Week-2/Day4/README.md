@@ -121,6 +121,8 @@ Output :
 
 make some function and combination with coporal :
 
+const a = 
+
 Input & Output example :
 ```javascript
 Input : 
