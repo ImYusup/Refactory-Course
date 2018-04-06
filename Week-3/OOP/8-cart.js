@@ -9,6 +9,7 @@ class Cart {
 
     addItem (itemId, price, quantity)  {
         this.total += price
+        let element =
         this.store.push(itemId,price,quantity)
         console.log(this.store)
     }
