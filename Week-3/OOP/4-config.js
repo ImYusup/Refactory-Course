@@ -12,7 +12,7 @@ class Config {
     }
 
     get(key) {
-        this.storage.get()
+        this.storage.get(key)
     }
 
     remove(key) {
@@ -37,23 +37,27 @@ class ConfigFileStorage {
             fileData = fileData ? JSON.parse(fileData) : {}
             // increase text on file!!
             fileData[key] = value
-            // console.log(fileData); <=== results parse
+            //console.log(fileData[key]); //<=== results parse
             // save data to file! dont use callback (!sync)
             fs.writeFileSync(this.file, JSON.stringify(fileData), 'utf8')
             // console.log(fileData[key])
             if (fileData[key] === Boolean(fileData[key])) {
                 console.log('Be able to save boolean.')
             }
-            else if (fileData[key] === String(fileData[key])) {
+            else if (fileData[key] === String(fileData[key]) || fileData[key] !== String(fileData[key]))  {
                 console.log('Be able to save string.')
             }
             else if (fileData[key] === Number(fileData[key])) {
                 console.log('Be able to save number.')
             }
-            // else if (fileData[key] === ) {
-            // console.log('Will update the "site_name" with new value.')  
-            // }    
+            else if (fileData[key] === Object(fileData[key])) {
+                console.log('Be able to save object or array.')
+            }
+            else  {
+                console.log('Will update the with new value.')
+            }
         }
+        // "${fileData[key]}"
     }
 
     remove(key) {
@@ -66,15 +70,13 @@ class ConfigFileStorage {
     get(key) {
         let fileData = fs.readFileSync(this.file, 'utf8')
         fileData = fileData ? JSON.parse(fileData) : {}
-        console.log(fileData);
-        console.log(this.put(key))
-        if (fileData[key] !== this.put()) {
-          console.log('Will return "Blog.')
+        if (fileData[key] !== undefined) {
+            console.log(`Will Return "${fileData[key]}"`)
         }
-        else if (fileData[key] === this.put()) {
-          console.log('Return null, because "site_name" was deleted')
+        else {
+            console.log('Return null, because "site_name" was deleted')
         }
-    }        
+    }
 }
 
 class ConfigNedb {
@@ -91,12 +93,12 @@ class ConfigMySql {
 
 const config = new Config(new ConfigFileStorage('config.json'))
 
-//config.put()
 config.put('site_name', 'Blog')           // Be able to save string.
 //config.put('maintenance', false)        // Be able to save boolean.
 //config.put('age', 30)                   // Be able to save number
-//config.put('site_name', 'Perfect Blog') // Be able to save boolean.
+config.put('site_name', 'Perfect Blog') // Be able to save boolean.
+//config.put('meta', { "description": "lorem ipsum" }) // Be able to save object or array.
 //config.remove('site_name')              // Remove "site_name" key.
-config.get('site_name')                 // Will return "Blog". || //Return null, because "site_name" was deleted.
+//config.get('site_name')                 // Will return "Blog". || //Return null, because "site_name" was deleted.
 
 
